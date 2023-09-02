@@ -1,0 +1,99 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+
+
+.container{
+      margin: 3rem;
+      display: grid;
+      place-items: center;
+}
+
+.container .row .card .card-body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+} 
+.container .input-group{
+      width: 30rem;
+}
+.container .input-group img{
+      width: 20px;
+      cursor: pointer;
+}
+
+
+.container2{
+      background:linear-gradient(105deg,#ece00c,#028dff) no-repeat;
+      border-radius: 23px;
+      width: 50rem;
+      margin-top: 2.9rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+@media (max-width:999px){
+      .container2{
+            width: 40rem;
+      }
+      .container2 .row{
+           flex-direction: column;
+           width: 30rem;
+      }
+}
+@media (max-width:775px){
+      .container2{
+            width: 30rem;
+      }
+      .container2 .row{
+           flex-direction: column;
+           width: 20rem;
+      }
+      .container2 .row .col{
+            width: 20rem;
+      }
+      
+}
+@media (max-width:510px){
+      .container2{
+            width: 20rem;
+      }
+      .container2 .row{
+           flex-direction: column;
+           width: 10rem;
+      }
+      .container2 .row .col{
+            width: 10rem;
+      }
+      .container .input-group{
+            width: 20rem;
+      }
+      
+}
+
+.container2 .city img{
+      width: 200px;
+      padding: 5px;
+}
+.container2 .city h1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+
+.container2 .row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+}
+.container2 .row .col{
+      padding: 5px;
+      width: 15rem;
+}
+
