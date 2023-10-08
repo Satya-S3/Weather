@@ -2,6 +2,10 @@
       margin: 0;
       padding: 0;
 }
+body{
+      height: 90vh;
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
 
 
 .container{
@@ -25,7 +29,7 @@
 
 
 .container2{
-      background:linear-gradient(105deg,#ece00c,#028dff) no-repeat;
+      background-image: linear-gradient(15deg, #13547a 0%, #297f75 100%);
       border-radius: 23px;
       width: 50rem;
       margin-top: 2.9rem;
@@ -70,8 +74,7 @@
       }
       .container .input-group{
             width: 20rem;
-      }
-      
+      } 
 }
 
 .container2 .city img{
@@ -79,6 +82,7 @@
       padding: 5px;
 }
 .container2 .city h1{
+      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -95,5 +99,13 @@
 .container2 .row .col{
       padding: 5px;
       width: 15rem;
+}
+footer{
+      display: grid;
+      place-items: center;
+      color: white;
+      margin-top: 22vh;
+      height: 50px;
+      background-color: black;
 }
 
