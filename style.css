@@ -4,16 +4,17 @@
 }
 body{
       height: 90vh;
-      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+      background:url("images/bg.jpg") center ;
 }
 
-
+.container h2 img{
+      width: 340px;
+}
 .container{
       margin: 3rem;
       display: grid;
       place-items: center;
 }
-
 .container .row .card .card-body{
       display: flex;
       flex-direction: column;
@@ -21,6 +22,7 @@ body{
 } 
 .container .input-group{
       width: 30rem;
+      box-shadow: 5px 5px 15px black;
 }
 .container .input-group img{
       width: 20px;
@@ -29,8 +31,8 @@ body{
 
 
 .container2{
-      background-image: linear-gradient(15deg, #13547a 0%, #297f75 100%);
       border-radius: 23px;
+      box-shadow: 2px 2px 15px black;
       width: 50rem;
       margin-top: 2.9rem;
       display: flex;
@@ -78,11 +80,13 @@ body{
 }
 
 .container2 .city img{
+      filter: drop-shadow(10px 10px 10px black);
       width: 200px;
       padding: 5px;
 }
 .container2 .city h1{
       color: white;
+      text-shadow: 2px 2px 5px black;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -97,15 +101,26 @@ body{
       margin-bottom: 30px;
 }
 .container2 .row .col{
+     
       padding: 5px;
       width: 15rem;
+}
+.container2 .row .card{
+      box-shadow: 5px 5px 10px;
 }
 footer{
       display: grid;
       place-items: center;
       color: white;
-      margin-top: 22vh;
-      height: 50px;
+      height: 40px;
+      padding-left: 30vw;
+      padding-right: 30vw;
+}
+footer h6{
       background-color: black;
+      border-radius: 23px;
+      padding: 5px 25vw;
+      position: absolute;
+      bottom: 0;
 }
 
