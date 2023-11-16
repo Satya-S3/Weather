@@ -109,18 +109,14 @@ body{
       box-shadow: 5px 5px 10px;
 }
 footer{
-      display: grid;
-      place-items: center;
+      text-align: center;
       color: white;
       height: 40px;
-      padding-left: 30vw;
-      padding-right: 30vw;
+      margin-top: 18vh;
+      background-color: black;
 }
 footer h6{
-      background-color: black;
-      border-radius: 23px;
-      padding: 5px 25vw;
-      position: absolute;
-      bottom: 0;
+      padding-top: 8px;
 }
+
 
