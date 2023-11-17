@@ -3,6 +3,7 @@ const url='https://api.openweathermap.org/data/2.5/weather?appid=7ea12571dac848e
 const search=document.querySelector('.search input');
 const searchBtn=document.querySelector('.search-btn');
 const weatherImg=document.querySelector('.weather-img');
+const searcharea=document.querySelector('#searcharea');
 
 async function fetchAPI(city){
       const response=await fetch(url+city);
@@ -39,10 +40,21 @@ async function fetchAPI(city){
                   weatherImg.src='images/haze.png';
             }
       }
+      if(search.value==""){
+            weatherImg.src='images/world.png';
+            document.querySelector('.temp').innerHTML="";
+            document.querySelector('.humidity').innerHTML="";
+            document.querySelector('.wind').innerHTML="";
+            document.getElementById('cityname').style.display="none";
+      }else{
+            document.getElementById('cityname').style.display="block";
+      }
 }
 
 searchBtn.addEventListener('click',()=>{
       fetchAPI(search.value);
-      search.value="";
+})
+searcharea.addEventListener('keyup',()=>{
+      fetchAPI(search.value);
 })
 

@@ -12,23 +12,23 @@
       <div class="container">
             <h2><img src="images/text.png" alt=""></h2>
             <div class="input-group search">
-                  <input type="text" class="form-control" aria-label="search" placeholder="Enter City">
+                  <input type="text" id="searcharea" class="form-control" aria-label="search" placeholder="Enter City">
                   <span class="input-group-text search-btn"><img src="images/search.png" alt=""></span>
             </div>
 
             
-            <div class="container2">
+            <div class="container2" data-tilt >
               
                     <div class="city">
-                      <img src="images/world.png" class="weather-img" data-tilt data-tilt-scale="1.1" >
-                      <h1></h1>
+                      <img src="images/world.png" class="weather-img">
+                      <h1 id="cityname"></h1>
                     </div>
         
                     <div class="row">
                           <div class="col">
                             <div class="card">
                               <div class="card-body">
-                                <h5 class="card-title">TEMPRATURE</h5>
+                                <h2 class="card-title">TEMPRATURE</h2>
                                 <h3 class="temp"></h3>
                               </div>
                             </div>
@@ -37,7 +37,7 @@
                           <div class="col">
                             <div class="card">
                               <div class="card-body">
-                                <h5 class="card-title">HUMIDITY</h5>
+                                <h2 class="card-title">HUMIDITY</h2>
                                 <h3 class="humidity"></h3>
                               </div>
                             </div>
@@ -46,7 +46,7 @@
                           <div class="col">
                             <div class="card">
                               <div class="card-body">
-                                <h5 class="card-title">WIND</h5>
+                                <h2 class="card-title">WIND</h2>
                                 <h4 class="wind"></h4>
                               </div>
                             </div>
@@ -55,9 +55,6 @@
               </div>
             </div>
       </div>
-      <footer>
-        <h6>Copyright Reserved © 2023</h6>
-      </footer>
     
       
 <script src="app.js"></script>
